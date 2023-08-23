@@ -1,10 +1,11 @@
+"use client";
 import BigCard from "@/components/BigCard";
 import GoalCard from "@/components/GoalCard";
 
 export default function Home() {
   return (
     <div className="w-screen h-auto md:h-screen flex flex-col justify-center items-center bg-blue-900 md:bg-white md:gap-5">
-      <header className="w-[90%] md:h-20 flex justify-center md:justify-end md:mb-10">
+      <header className="w-[90%] md:h-20 flex flex-col md:flex-row justify-center md:justify-end md:mb-10">
         <div className="w-full  h-auto flex justify-center md:justify-start md:h-36">
           <img
             src="funval-logo3.jpg"

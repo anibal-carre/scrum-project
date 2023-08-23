@@ -32,22 +32,22 @@ const Login = ({ handleRegister }) => {
 
       <div className="w-[80%] flex justify-between items-center mt-3">
         <p className="text-sm md:text-lg">
-          Don't have an account?{" "}
+          ¿No tienes una cuenta?{" "}
           <span
             onClick={handleRegister}
             className="text-blue-900 underline cursor-pointer"
           >
-            Register
+            Regístrate
           </span>
         </p>
 
         <button
           onClick={() => {
-            router.push("/dashboard");
+            router.push("/profile");
           }}
           className="bg-blue-900 rounded-lg text-white p-3 px-5 md:p-4 md:px-7"
         >
-          Submit
+          Login
         </button>
       </div>
     </form>
