@@ -2,6 +2,8 @@
 import { useRouter } from "next/navigation";
 import { BsArrowRight } from "react-icons/bs";
 import { SlLogout } from "react-icons/sl";
+import { HiOutlinePencil } from "react-icons/hi";
+
 const Profile = () => {
   const router = useRouter();
   return (
@@ -76,9 +78,9 @@ const Profile = () => {
             onClick={() => {
               router.push("/editprofile");
             }}
-            className="bg-blue-900 rounded-lg text-white p-3 px-5 md:p-4 md:px-7"
+            className="flex items-center gap-2 bg-blue-900 rounded-lg text-white p-3 px-5 md:p-4 md:px-7"
           >
-            Editar
+            Editar <HiOutlinePencil />
           </button>
 
           <button

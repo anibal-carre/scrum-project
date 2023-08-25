@@ -7,12 +7,12 @@ function GoalCard({ bg, link, title, img }) {
         className={`w-full h-[85%] flex flex-col items-center  rounded-xl ${bg} border border-black`}
       >
         <Link href={link} className="mt-3 mb-5 ">
-          <span className=" text-lg font-semibold font-mono ">{title}</span>
+          <span className="text-lg font-semibold font-mono">{title}</span>
         </Link>
 
         <div>
           <Link href={link}>
-            <img src={img} alt="" className=" w-32 h-32 drop-shadow-lg" />
+            <img src={img} alt="" className="w-32 h-32 drop-shadow-lg" />
           </Link>
         </div>
       </div>

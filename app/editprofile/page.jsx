@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { LiaSaveSolid } from "react-icons/lia";
 const EditProfile = () => {
   const router = useRouter();
   const handleSubmit = (event) => {
@@ -108,9 +109,9 @@ const EditProfile = () => {
             onClick={() => {
               router.push("/profile");
             }}
-            className="bg-blue-900 rounded-lg text-white p-3 px-5 mb-16 md:p-4 md:px-7"
+            className="flex items-center gap-2 bg-blue-900 rounded-lg text-white p-3 px-5 mb-16 md:p-4 md:px-7"
           >
-            Salvar
+            Guardar <LiaSaveSolid className="text-lg" />
           </button>
         </div>
       </form>
