@@ -3,7 +3,7 @@ import React from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { useRouter } from "next/navigation";
 
-export const NavSection = ({ title, img, bg }) => {
+export const NavSection = ({ title, img, bg, bg2 }) => {
   const router = useRouter();
   return (
     <nav className="w-[90%] h-auto flex flex-col justify-center items-center mt-10">
@@ -11,7 +11,7 @@ export const NavSection = ({ title, img, bg }) => {
         onClick={() => {
           router.push("/dashboard");
         }}
-        className={`w-[50px] h-10 ${bg} self-start flex justify-center items-center border rounded shadow shadow-black hover:scale-105 hover:transition-all active:bg-purple-400`}
+        className={`w-[50px] h-10 ${bg} self-start flex justify-center items-center border rounded shadow shadow-black hover:scale-105 hover:transition-all hover:${bg2}`}
       >
         <BiArrowBack className=" text-white " />
       </button>
