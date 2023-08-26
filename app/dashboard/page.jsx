@@ -1,5 +1,6 @@
 "use client";
 import BigCard from "@/components/BigCard";
+import Card from "@/components/Card";
 import GoalCard from "@/components/GoalCard";
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
       </header>
       <div className="w-[90%] h-auto md:h-[680px] flex flex-col md:flex-row bg-blue-900 md:bg-blue-950 rounded-xl md:shadow-md md:shadow-black md:mt-5">
         <div className="w-full h-[82vh] md:h-full md:w-[30%] flex justify-center items-center md:p-5 ">
-          <BigCard />
+          <Card />
         </div>
         <div className="w-full h-auto md:w-[70%] md:h-full flex flex-col md:flex-row md:flex-wrap gap-5">
           <div className="w-full flex flex-col justify-center md:items-end items-center gap-5 md:flex-row">
