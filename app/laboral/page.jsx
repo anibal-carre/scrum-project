@@ -3,6 +3,7 @@ import NavSection from "@/components/NavSection";
 import { useRouter } from "next/navigation";
 const LaboralPage = () => {
   const router = useRouter();
+  const currentYear = new Date().getFullYear();
   return (
     <div className="w-screen h-screen flex flex-col items-center bg-orange-400 gap-10">
       <NavSection
@@ -14,7 +15,7 @@ const LaboralPage = () => {
       <div className="w-[90%] h-[500px] md:w-[600px] md:h-[500px] flex justify-center gap-5">
         <button
           onClick={() => {
-            router.push("/laboral/empleado");
+            router.push(`/laboral/empleado/${currentYear}`);
           }}
           className="w-[40%] h-14 bg-orange-500 text-white font-semibold font-mono border hover:scale-105 hover:transition-all hover:bg-orange-300 shadow shadow-black rounded-md"
         >
@@ -22,7 +23,7 @@ const LaboralPage = () => {
         </button>
         <button
           onClick={() => {
-            router.push("/laboral/emprendedor");
+            router.push(`/laboral/emprendedor/${currentYear}`);
           }}
           className="w-[40%] h-14 bg-orange-500 text-white font-semibold font-mono border hover:scale-105 hover:transition-all hover:bg-orange-300 shadow shadow-black rounded-md"
         >
