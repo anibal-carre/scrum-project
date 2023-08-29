@@ -53,7 +53,13 @@ export default function Home() {
               link={"/fisico"}
               img={"fisico.png"}
             />
-            <div className="border w-full h-64 md:w-[30%] hidden md:flex md:invisible"></div>
+
+            <GoalCard
+              title={""}
+              bg={"bg-blue-900"}
+              link={"#"}
+              img={"brujula2.png"}
+            />
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Goals from "@/components/Goals";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { BsArrowLeftShort } from "react-icons/bs";
+import { HiHome } from "react-icons/hi";
 
 const Fisico = ({ params }) => {
   const currentYear = new Date().getFullYear();
@@ -22,15 +23,23 @@ const Fisico = ({ params }) => {
   }
   return (
     <div className="h-[120vh] bg-red-500">
-      <div className="flex md:flex-row flex-col text-white h-screen">
-        <div className="md:w-20 w-full flex md:flex-col flex-row justify-center items-center fixed md:mt-32 ">
+      <div className="flex md:flex-row flex-col text-white h-screen ">
+        <div className="md:w-20 w-full flex md:flex-col flex-row justify-center items-center fixed mt-0 md:mt-32 bg-red-700/90 md:bg-red-700  md:rounded-2xl md:py-3 md:ml-5">
           <div
-            className="w-10 h-10 flex justify-center items-center font-mono bg-red-600 hover:bg-red-300 m-2 mt- text-center rounded-full text-[12px] shadow-md shadow-black border border-white cursor-pointer"
+            className="w-10 h-10 flex justify-center items-center font-mono bg-red-600 hover:bg-red-300 hover:scale-150  hover:duration-150 m-2 mt- text-center rounded-full text-[12px] shadow-md shadow-black border border-white cursor-pointer"
             onClick={() => {
               router.push(`/fisico`);
             }}
           >
             <BsArrowLeftShort className="text-[22px]" />
+          </div>
+          <div
+            className="w-10 h-10 flex justify-center items-center font-mono bg-red-600 hover:bg-red-300 hover:scale-150  hover:duration-150 m-2 mt- text-center rounded-full text-[12px] shadow-md shadow-black border border-white cursor-pointer"
+            onClick={() => {
+              router.push("/dashboard");
+            }}
+          >
+            <HiHome className="text-[22px]" />
           </div>
           {nextFourYears.map((e) => (
             <div
@@ -38,7 +47,7 @@ const Fisico = ({ params }) => {
                 router.push(`/fisico/fisico/${e}`);
               }}
               key={e}
-              className="w-10 h-10 flex justify-center items-center font-mono bg-red-600 hover:bg-red-300 m-2 mt- text-center rounded-full text-[12px] shadow-md shadow-black border border-white cursor-pointer"
+              className="w-10 h-10 flex justify-center items-center font-mono bg-red-600 hover:bg-red-300 hover:scale-150  hover:duration-150 m-2 mt- text-center rounded-full text-[12px] shadow-md shadow-black border border-white cursor-pointer"
             >
               {e}
             </div>

@@ -15,9 +15,10 @@ const Form = ({ currentYear, bg, nombre, setEdit, action, title }) => {
         </span>
         <div className="w-full h-auto flex justify-center text-zinc-100">
           <input
+            placeholder="¿Qué haré?"
             name={`quehare${nombre}`}
             type="text"
-            className="w-full h-10 rounded-md border border-black text-black"
+            className="w-full h-10 rounded-md border border-black text-black px-3"
           />
         </div>
       </div>
@@ -27,9 +28,10 @@ const Form = ({ currentYear, bg, nombre, setEdit, action, title }) => {
         </span>
         <div className="w-full h-auto text-zinc-100">
           <input
+            placeholder="¿Por qué lo hago?"
             name={`porque${nombre}`}
             type="text"
-            className="w-full h-10 rounded-md border border-black text-black"
+            className="w-full h-10 rounded-md border border-black text-black px-3"
           />
         </div>
       </div>
@@ -40,9 +42,10 @@ const Form = ({ currentYear, bg, nombre, setEdit, action, title }) => {
         </span>
         <div className="w-full h-auto text-zinc-100">
           <input
+            placeholder="¿Cómo lo haré?"
             name={`como${nombre}`}
             type="text"
-            className="w-full h-10 rounded-md border border-black text-black"
+            className="w-full h-10 rounded-md border border-black text-black px-3"
           />
         </div>
       </div>
@@ -53,9 +56,10 @@ const Form = ({ currentYear, bg, nombre, setEdit, action, title }) => {
         </span>
         <div className="w-full h-auto text-zinc-100">
           <input
+            placeholder="¿Cuándo lo haré?"
             name={`cuando${nombre}`}
             type="text"
-            className="w-full h-10 rounded-md border border-black text-black"
+            className="w-full h-10 rounded-md border border-black text-black px-3"
           />
         </div>
       </div>
@@ -66,9 +70,10 @@ const Form = ({ currentYear, bg, nombre, setEdit, action, title }) => {
         </span>
         <div className="w-full h-auto text-zinc-100">
           <input
+            placeholder="¿Dónde lo haré?"
             name={`donde${nombre}`}
             type="text"
-            className="w-full h-10 rounded-md border border-black text-black"
+            className="w-full h-10 rounded-md border border-black text-black px-3"
           />
         </div>
       </div>
@@ -79,9 +84,10 @@ const Form = ({ currentYear, bg, nombre, setEdit, action, title }) => {
         </span>
         <div className="w-full h-auto text-zinc-100">
           <input
+            placeholder="¿Con quién lo haré?"
             name={`quien${nombre}`}
             type="text"
-            className="w-full h-10 rounded-md border border-black text-black"
+            className="w-full h-10 rounded-md border border-black text-black px-3"
           />
         </div>
       </div>
@@ -91,9 +97,10 @@ const Form = ({ currentYear, bg, nombre, setEdit, action, title }) => {
         </span>
         <div className="w-full h-auto text-zinc-100">
           <input
+            placeholder="¿Cuánto me costará?"
             name={`cuanto${nombre}`}
             type="text"
-            className="w-full h-10 rounded-md border border-black text-black"
+            className="w-full h-10 rounded-md border border-black text-black px-3"
           />
         </div>
       </div>
